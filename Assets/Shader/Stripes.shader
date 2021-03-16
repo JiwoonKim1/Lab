@@ -7,6 +7,7 @@
 		_Direction("Direction", Range(0, 1)) = 0
 		_WarpScale("Warp Scale", Range(0, 1)) = 0
 		_WarpTiling("Warp Tiling", Range(1, 10)) = 1
+
 	}
 
 		SubShader
@@ -37,6 +38,7 @@
 			{
 				float2 uv : TEXCOORD0;
 				float4 vertex : SV_POSITION;
+
 			};
 
 			v2f vert(appdata v)
@@ -61,6 +63,7 @@
 				fixed value = floor(frac(pos.x) + 0.5);
 				return lerp(_Color1, _Color2, value);
 			}
+
 			ENDCG
 		}
 	}
