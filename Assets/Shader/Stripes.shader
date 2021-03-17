@@ -7,6 +7,7 @@
 		_Direction("Direction", Range(0, 1)) = 0
 		_WarpScale("Warp Scale", Range(0, 1)) = 0
 		_WarpTiling("Warp Tiling", Range(1, 10)) = 1
+		_Position("Position", Range(0,1)) = 0.1
 
 	}
 
@@ -27,6 +28,7 @@
 			float _Direction;
 			float _WarpScale;
 			float _WarpTiling;
+			float _Position;
 
 			struct appdata
 			{
@@ -60,7 +62,7 @@
 				pos.x += sin(pos.y * _WarpTiling * PI * 2) * _WarpScale;
 				pos.x *= _Tiling;
 
-				fixed value = floor(frac(pos.x) + 0.5);
+				fixed value = floor(frac(pos.x) + _Position);
 				return lerp(_Color1, _Color2, value);
 			}
 

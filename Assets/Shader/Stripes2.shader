@@ -1,4 +1,4 @@
-﻿Shader "Custom/Stripes2"
+﻿Shader "Unlit/Stripes2"
 {
 	Properties{
 		_Tiling("Tiling", Range(1, 500)) = 10
