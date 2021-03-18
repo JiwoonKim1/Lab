@@ -7,7 +7,9 @@
 		_Direction("Direction", Range(0, 1)) = 0
 		_WarpScale("Warp Scale", Range(0, 1)) = 0
 		_WarpTiling("Warp Tiling", Range(1, 10)) = 1
-		_Position("Position", Range(0,1)) = 0.1
+		_Position("Position", Range(0,1)) = 0.5
+
+		_Speed("Speed", Range(0,5)) = 0.5
 
 	}
 
@@ -30,6 +32,8 @@
 			float _WarpTiling;
 			float _Position;
 
+			float _Speed;
+
 			struct appdata
 			{
 				float4 vertex : POSITION;
@@ -48,6 +52,7 @@
 				v2f o;
 				o.vertex = UnityObjectToClipPos(v.vertex);
 				o.uv = v.uv;
+				o.uv.x = o.uv.x + (_Time.y * _Speed);
 				return o;
 			}
 

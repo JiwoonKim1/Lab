@@ -44,8 +44,8 @@
 				o.vertex = UnityObjectToClipPos(v.vertex);
 				o.uv = v.uv;
 
-				//o.uv.x = o.uv.x + _Speed;
-				o.uv.x = o.uv.x + _Time.x;
+				o.uv.x = o.uv.x + _Speed;
+				//.o.uv.x = o.uv.x + _Time.x;
 				return o;
 			}
 
