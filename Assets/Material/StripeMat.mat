@@ -71,7 +71,7 @@ Material:
     - _Position: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
-    - _Speed: 0.1
+    - _Speed: 0
     - _SrcBlend: 1
     - _Tiling: 1
     - _UVSec: 0

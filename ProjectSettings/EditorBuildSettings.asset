@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Lab.unity
     guid: a592bcb808a50a540897aa206f8a4fa3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 0
@@ -17,6 +17,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/UnityCylinder.unity
     guid: 0b880b33fc09c4643af63b54b1023965
+  - enabled: 0
+    path: Assets/Scenes/FixedBalance.unity
+    guid: e92db7cc2fce3ba4bb9e23d410733089
+  - enabled: 1
+    path: Assets/Scenes/TwoCylinder.unity
+    guid: 693e7c9b3747efd4090be6e4fed310c0
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 6c309e6b2ff24a147be9f80524eac829, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: e9524fe958769b14cb8b0fa3205cde0e, type: 2}

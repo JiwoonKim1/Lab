@@ -12,8 +12,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: unitycCube
-  productName: Cube
+  companyName: Balance
+  productName: TwoCylinder24
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -126,6 +126,7 @@ PlayerSettings:
   bundleVersion: 0.1
   preloadedAssets:
   - {fileID: 0}
+  - {fileID: 11400000, guid: e9524fe958769b14cb8b0fa3205cde0e, type: 2}
   - {fileID: -345208678369162854, guid: be0f887602d7c39458571262f8f49ce8, type: 2}
   - {fileID: 11400000, guid: 6c309e6b2ff24a147be9f80524eac829, type: 2}
   metroInputSource: 0
@@ -170,7 +171,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.UnityCube.Cube
+    Android: com.Balance.TwoCylinder24
   buildNumber: {}
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 23
