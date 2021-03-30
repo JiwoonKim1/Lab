@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MatL
-  m_Shader: {fileID: -6465566751694194690, guid: 7bda043b79dfb3d478f3a394cca19510, type: 3}
+  m_Name: Spiral
+  m_Shader: {fileID: -6465566751694194690, guid: aa29e6751da3fb44e93b9cb29c39e98d, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -48,10 +48,6 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_2CE5408B: -2
-    - Vector1_B74CEAC4: 2
-    - Vector1_D002DA27: 10
-    - Vector1_E6664503: 24
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -74,17 +70,12 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_2A30DC1C: {r: 0, g: 0, b: 0, a: 0}
-    - Color_2EBD2456: {r: 1, g: 1, b: 1, a: 0}
-    - Color_47443254: {r: 0, g: 0, b: 0, a: 0}
-    - Color_65307C04: {r: 0, g: 0, b: 0, a: 0}
-    - Color_D44C7955: {r: 1, g: 1, b: 1, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
   m_BuildTextureStacks: []
---- !u!114 &5450395965427441555
+--- !u!114 &7122592178087583473
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
