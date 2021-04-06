@@ -1,0 +1,198 @@
+{
+    "name": "InputMaster",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "07f35f23-e3b4-45f3-b439-a928e4890d3f",
+            "actions": [
+                {
+                    "name": "GripButton",
+                    "type": "Button",
+                    "id": "76b2f1aa-ccb2-4494-a3c9-b2f7ef064db8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "TriggerButton",
+                    "type": "Button",
+                    "id": "82198c53-6b3a-4bcd-9d3a-bc866883c393",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "08bb75f2-4296-44c6-b7dd-05f6106acc8e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "5205ff3b-389d-4fc1-b033-0f58408d16b8",
+                    "path": "<XRSimulatedController>/gripButton",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "Right Controller;Left Controller;Controller",
+                    "action": "GripButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "225377ef-d74e-4f82-8625-d9dba589790f",
+                    "path": "<XRInputV1::Oculus::OculusTouchControllerLeft>/grippressed",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "Controller;Right Controller;Left Controller",
+                    "action": "GripButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c2acf45b-26ac-4663-a4f1-57db53514245",
+                    "path": "<OpenVROculusTouchController>/gripPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Controller;Right Controller;Left Controller",
+                    "action": "GripButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4818dfb5-6745-4074-a10e-a0978c44c7e9",
+                    "path": "<XRSimulatedController>/triggerButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Right Controller;Left Controller;Controller",
+                    "action": "TriggerButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "193b1835-265f-4f0e-aef6-6b11f3811aa5",
+                    "path": "<OpenVROculusTouchController>/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Controller",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a6818d84-0cc0-4b1b-8bbe-b5ff4a66c5c7",
+                    "path": "<OpenVROculusTouchController>/thumbstickClicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Controller",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "71afbe75-7365-4453-b2b7-0f195cafec8d",
+                    "path": "<OculusTouchController>{RightHand}/thumbstickClicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Right Controller;Controller",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Keyboard",
+            "id": "f013f5ae-3d20-4b60-87ea-f58a8ef65cbc",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "7565e1ba-1860-4f21-9c3c-a37190986c92",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "3b0b303e-f165-4687-a4cc-96e0bb863b86",
+                    "path": "<Keyboard>/0",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "keyboard",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6a6bb242-968b-4d2e-9bf8-2a7236312d86",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "keyboard",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Controller",
+            "bindingGroup": "Controller",
+            "devices": [
+                {
+                    "devicePath": "<XRController>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Right Controller",
+            "bindingGroup": "Right Controller",
+            "devices": [
+                {
+                    "devicePath": "<XRController>{RightHand}",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Left Controller",
+            "bindingGroup": "Left Controller",
+            "devices": [
+                {
+                    "devicePath": "<XRController>{LeftHand}",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "keyboard",
+            "bindingGroup": "keyboard",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
