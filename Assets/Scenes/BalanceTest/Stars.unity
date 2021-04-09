@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 177711922}
   - component: {fileID: 177711921}
   - component: {fileID: 177711926}
+  - component: {fileID: 177711920}
   m_Layer: 0
   m_Name: CloseStars
   m_TagString: Untagged
@@ -142,6 +143,29 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &177711920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177711919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32ec46bd9c066c942aca803076f46e98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  starsMax: 150
+  starSize1: 0.008
+  speed1: 1.5
+  speed2: 1.2
+  respawnPoint1: -2
+  respawnPoint2: -5
+  respawnRadius1: 0.7
+  respawnRadius2: 1
+  starClipDistance: 0.7
+  starClipDistance2: 1.2
+  backPoint: {fileID: 185159298}
 --- !u!199 &177711921
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -4930,7 +4954,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 177711919}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1149932955}
@@ -4943,7 +4967,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 177711919}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 426b77d278c985e4b8ff706471c6607d, type: 3}
   m_Name: 
@@ -4972,12 +4996,12 @@ GameObject:
   - component: {fileID: 185159301}
   - component: {fileID: 185159300}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: backPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &185159299
 Transform:
   m_ObjectHideFlags: 0
@@ -4986,8 +5010,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 185159298}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalPosition: {x: 0, y: 0, z: 3}
+  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_Children: []
   m_Father: {fileID: 1149932955}
   m_RootOrder: 2
@@ -5024,7 +5048,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 3b963e6f6741210468ed7ad98349fb8f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5070,7 +5094,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &578716246
 Light:
   m_ObjectHideFlags: 0
@@ -5139,13 +5163,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 578716245}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &1149932952
 GameObject:
   m_ObjectHideFlags: 0
@@ -5198,7 +5222,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.2
-  far clip plane: 10
+  far clip plane: 9
   field of view: 39.3
   orthographic: 0
   orthographic size: 5
@@ -5224,7 +5248,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1149932952}
-  m_LocalRotation: {x: 0.6963643, y: 0.122787856, z: -0.6963643, w: 0.122787856}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -5233,7 +5257,7 @@ Transform:
   - {fileID: 185159299}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 160, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1149932956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5323,6 +5347,7 @@ GameObject:
   - component: {fileID: 1702851344}
   - component: {fileID: 1702851343}
   - component: {fileID: 1702851345}
+  - component: {fileID: 1702851342}
   m_Layer: 0
   m_Name: FarStars
   m_TagString: Untagged
@@ -5344,6 +5369,30 @@ Transform:
   m_Father: {fileID: 1149932955}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1702851342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702851340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32276c2585fa6504f98eb95dcad11b1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  starsMax: 400
+  starSize1: 0.007
+  starSize2: 0.009
+  speed1: 0.7
+  speed2: 0.5
+  respawnPoint1: -1
+  respawnPoint2: -3
+  respawnRadius1: 1.5
+  respawnRadius2: 2
+  starClipDistance: 0.7
+  backPoint: {fileID: 185159298}
+  camera: {fileID: 1149932954}
 --- !u!199 &1702851343
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -10131,7 +10180,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1702851340}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bf8d5e8a99f2699418ae0185b0cb8a60, type: 3}
   m_Name: 
