@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Lab.unity
+    path: Assets/Scenes/Lab.unity
     guid: a592bcb808a50a540897aa206f8a4fa3
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
@@ -26,10 +26,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Spiral.unity
     guid: 3d09c8168d90e2a44a6fac8754ddcf70
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/BalanceTest/TwoPlane.unity
     guid: c35d9f09680944b4d8a65a5beef7e387
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/BalanceTest/Stars.unity
     guid: 22911b7d498516c4abd76fecf044cdf4
   m_configObjects:
