@@ -64,7 +64,7 @@
 				pos.x = lerp(i.uv.x, i.uv.y, _Direction);
 				pos.y = lerp(i.uv.y, 1 - i.uv.x, _Direction);
 
-				pos.x += sin(pos.y * _WarpTiling * PI * 2) * _WarpScale;
+				//pos.x += sin(pos.y * _WarpTiling * PI * 2) * _WarpScale;
 				pos.x *= _Tiling;
 
 				fixed value = floor(frac(pos.x) + _Position);
